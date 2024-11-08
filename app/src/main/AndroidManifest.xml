@@ -13,6 +13,69 @@
         android:theme="@style/Theme.Istishari"
         tools:targetApi="31">
         <activity
+            android:name=".PsyMale.JerusalemPMaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PsyMale.JerusalemPMaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PsyMale.NablusMaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PsyMale.NablusMaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PsyMale.SMaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PsyMale.RamallahMaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".PsyMale.RamallahMaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.JerusalemFemaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.JerusalemFemaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.NablusFemaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.NablusFemaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.RamallahFemaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.RamallahFemaleActivites"
+            android:exported="false" />
+        <activity
+            android:name=".HeartFemale.FemaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.JerusalemMaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.JerusalemMaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.NablusMaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.NablusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.RamallahMaleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.RamallahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeartMale.MaleActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

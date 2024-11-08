@@ -12,70 +12,169 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="158dp"
         android:contentDescription="@string/logo_image"
         android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/mainLabel"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="278dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="9dp"
+        android:gravity="center"
         android:text="@string/welcome_to_doctors_application"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/ProblemSpn"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="127dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="34dp"
         android:gravity="center"
         android:text="@string/what_are_you_searching_for"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/mainLabel"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/logo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/ProblemSpn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/mainLabel"
         android:layout_width="0dp"
-        android:layout_height="39dp"
+        android:layout_height="0dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="432dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
         android:text="@string/choose_the_main_problem"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/addLabel"
         app:layout_constraintEnd_toStartOf="@+id/ProblemSpn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Spinner
         android:id="@+id/ProblemSpn"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="428dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="21dp"
         android:entries="@array/Spinner_items"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/edtAns"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/mainLabel"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/addLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="58dp"
+        android:gravity="center"
+        android:text="@string/add_any_specifics"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/edtAns"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainLabel" />
+
+    <EditText
+        android:id="@+id/edtAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="98dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/answer_this"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addLabel"
+        app:layout_constraintTop_toBottomOf="@+id/ProblemSpn" />
+
+    <CheckBox
+        android:id="@+id/TermsBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/accept_terms_and_conditions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/search"
+        app:layout_constraintBottom_toTopOf="@+id/TermsBox"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/TermsBox"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="203dp"
+        android:gravity="center"
+        android:text="@string/choose_your_gender"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addLabel" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/edtAns">
+
+        <RadioButton
+            android:id="@+id/MaleRad"
+            android:layout_width="94dp"
+            android:layout_height="73dp"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/FemRad"
+            android:layout_width="94dp"
+            android:layout_height="61dp"
+            android:text="@string/female" />
+    </RadioGroup>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

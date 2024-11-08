@@ -5,10 +5,27 @@
     <string name="welcome_to_doctors_application">Welcome To Doctors Application</string>
     <string name="what_are_you_searching_for">What are you Searching for?</string>
     <string name="choose_the_main_problem">Choose The Main Problem</string>
+    <string name="add_any_specifics">Add Any Specifics:</string>
+    <string name="answer_this">Answer this</string>
+    <string name="accept_terms_and_conditions">Accept Terms and Conditions</string>
+    <string name="male">Male</string>
+    <string name="search">Search</string>
+    <string name="choose_your_gender">Choose your Gender</string>
+    <string name="female">Female</string>
+    <string name="your_result_search_for">You Choosed:</string>
+    <string name="please_choose_your_residence">Please Choose your Residence</string>
+    <string name="todo">TODO</string>
+    <string name="psychological_impacts">psychological impacts</string>
+    <string name="with">With:</string>
+    <string name="heart_problems">Heart Problems</string>
     <string-array name="Spinner_items">
-       <item>Heart Problems</item>
-        <item>Physical Injuries</item>
-        <item>psychological impacts </item>
+        <item>Heart Problems</item>
+        <item>psychological impacts</item>
     </string-array>
-    
+    <string-array name="options">
+        <item>Ramallah</item>
+        <item>Nablus</item>
+        <item>Jerusalem</item>
+    </string-array>
+
 </resources>
